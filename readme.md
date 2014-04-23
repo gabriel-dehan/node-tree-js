@@ -94,7 +94,7 @@ The NodeTree class provides a crispy interface for you to use.
 
 ### Attributes
 
-| Name          | Description                                                    | <Value Type>                 |
+| Name          | Description                                                    | \<Value Type\>                 |
 | ------------- |:--------------------------------------------------------------:| ----------------------------:|
 | tree          | The tree object you originaly passed to the constructor        | Object                       |
 | count         | The number of nodes in the array                               | Integer                      |
