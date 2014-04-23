@@ -103,23 +103,23 @@ The NodeTree class provides a crispy interface for you to use.
 
 ### Methods
 
-| Name          | Arguments         | Description                                                                 | <Type> Return value |
+| Name          | Arguments         | Description                                                                 | \<Type\> Return value |
 | ------------- |:-----------------:|:---------------------------------------------------------------------------:|--------------------:|
-| get_owner     |                   | Gets the current owner of the tree if set, otherwise "Anonymous"            | <String> The owner  |
+| get_owner     |                   | Gets the current owner of the tree if set, otherwise "Anonymous"            | \<String\> The owner  |
 | get_path      | node_id           | Gets the path to a given node, using nodes name attributes (ex: "/dir1/dir2/leaf") | <String> The path to the node |
-| delete_all    |                   | Delete all nodes in the root tree                                           | <Boolean> Success or Failure (True|False)  |
-| count_nodes   |                   | Count all the nodes in the tree                                             | <Integer> The node count      |
-| insert        | new_node, node_id | Inserts `new_node` in the tree node with id `node_id`                       | <Nothing>           |
-| delete        | node_id           | Delete the node with `node_id` from the tree                                | <Object> The deleted node |
-| move          | node_id, destination_id | Move the node with `node_id` into the tree node with `destination_id` | <Boolean> Success or Failure (True|False) |
+| delete_all    |                   | Delete all nodes in the root tree                                           | \<Boolean\> Success or Failure (True|False)  |
+| count_nodes   |                   | Count all the nodes in the tree                                             | \<Integer\> The node count      |
+| insert        | new_node, node_id | Inserts `new_node` in the tree node with id `node_id`                       | \<Nothing\>           |
+| delete        | node_id           | Delete the node with `node_id` from the tree                                | \<Object\> The deleted node |
+| move          | node_id, destination_id | Move the node with `node_id` into the tree node with `destination_id` | \<Boolean\> Success or Failure (True|False) |
 | tree_contains | container_id, node_id | Checks if the tree node with `container_id` contains the node with `node_id` | <Boolean> True or False |
-| fetch_node    | node_id           | Get the node with `node_id` from the tree                                   | <Object> The node |
-| fetch_parent  | node_id           | Get the parent of the node with `node_id` from the tree                     | <Object> The node |
+| fetch_node    | node_id           | Get the node with `node_id` from the tree                                   | \<Object\> The node |
+| fetch_parent  | node_id           | Get the parent of the node with `node_id` from the tree                     | \<Object\> The node |
 | toggle_user   | add, user_name, node_id | Add or remove a user from a node (param add : true to add a user, false to  remove it)                      | <Object> The node |
-| name_exists   | name, node_id     | Checks if node name already exists in the node with `node_id`               | <Boolean> True or False  |
-| node_exists   | node_id, parent_id | Checks if the node with `node_id` exists in the parent node `node_id`      | <Boolean> True or False  |
-| to_string     |                   | Returns a string reprensentation of the tree hierarchy                      | <String> The tree  |
-| to_html       |                   | Returns an HTML reprensentation of the tree hierarchy                       | <String> The tree  |
+| name_exists   | name, node_id     | Checks if node name already exists in the node with `node_id`               | \<Boolean\> True or False  |
+| node_exists   | node_id, parent_id | Checks if the node with `node_id` exists in the parent node `node_id`      | \<Boolean\> True or False  |
+| to_string     |                   | Returns a string reprensentation of the tree hierarchy                      | \<String\> The tree  |
+| to_html       |                   | Returns an HTML reprensentation of the tree hierarchy                       | \<String\> The tree  |
 
 ## Change logs
 
