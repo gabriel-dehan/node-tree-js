@@ -12,14 +12,13 @@ TODO
 node_tree.js will provide you with a simple interface to access and modify a hierarchical tree of nodes. An instance of such a tree is a files and directories tree :
 
 ```
-  - /
-    - Documents/
-      - hello.doc
-      - world.doc
-    - Images
-      - tree.jpg
-    file.txt
-
+- /
+  - Documents/
+    - hello.doc
+    - world.doc
+  - Images
+    - tree.jpg
+  - file.txt
 ```
 
 NodeTree provides a class for you to use to move, rename, access any element in a given tree.
@@ -58,7 +57,7 @@ Note that there are **two** types of nodes : leaf nodes and tree nodes. Tree nod
     "_id"           : <String> | <Integer>,
     "created_at"    : <String> | <Date>,
     "last_modified" : <String> | <Date>,
-    "tree"          : <Array>
+    "tree"          : <Array of Tree nodes or Leaf nodes>
 }]
 ```
 
@@ -84,7 +83,7 @@ Note that there are **two** types of nodes : leaf nodes and tree nodes. Tree nod
         "name"          : "File 1",
         "created_at"    : <String> | <Date>,
         "last_modified" : <String> | <Date>,
-        "tree"          : <Array>
+        "tree"          : <Array of Tree nodes or Leaf nodes>
     }
 ```
 
@@ -104,7 +103,7 @@ The NodeTree class provides a crispy interface for you to use.
 ### Methods
 
 | Name          | Arguments         | Description                                                                 | \<Type\> Return value |
-| ------------- |:-----------------:|:---------------------------------------------------------------------------:|--------------------:|
+|:-------------:|-------------------|-----------------------------------------------------------------------------|-----------------------|
 | get_owner     |                   | Gets the current owner of the tree if set, otherwise "Anonymous"            | \<String\> The owner  |
 | get_path      | node_id           | Gets the path to a given node, using nodes name attributes (ex: "/dir1/dir2/leaf") | <String> The path to the node |
 | delete_all    |                   | Delete all nodes in the root tree                                           | \<Boolean\> Success or Failure (True|False)  |
@@ -123,7 +122,7 @@ The NodeTree class provides a crispy interface for you to use.
 
 ## Change logs
 
-`v 1.1.0` ~ 2 years ago
+`v 1.1.0` ~ latest
 * First Release
 * Doc
 * Fixes
